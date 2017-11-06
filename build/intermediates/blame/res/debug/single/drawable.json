@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/res/merged/debug/drawable/refresh.xml",
+        "source": "/Users/chenxj/Documents/AWSservice/TemperatureControl/res/drawable/refresh.xml"
+    },
+    {
+        "merged": "/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/res/merged/debug/drawable/ic_launcher.png",
+        "source": "/Users/chenxj/Documents/AWSservice/TemperatureControl/res/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/res/merged/debug/drawable/refresh_button.png",
+        "source": "/Users/chenxj/Documents/AWSservice/TemperatureControl/res/drawable/refresh_button.png"
+    },
+    {
+        "merged": "/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/res/merged/debug/drawable/refresh_button_pressed.png",
+        "source": "/Users/chenxj/Documents/AWSservice/TemperatureControl/res/drawable/refresh_button_pressed.png"
+    }
+]

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/chenxj/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-core/2.2.22/c6789de00db9d1f93faec881fa0c1f5960fb8a15/aws-android-sdk-core-2.2.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="c6789de00db9d1f93faec881fa0c1f5960fb8a15">
+        <dex dex="/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/pre-dexed/debug/aws-android-sdk-core-2.2.22_f7765cd429f6f652989c23488b8b0d6359d1ed44.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Applications/Android Studio.app/Contents/gradle/m2repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/pre-dexed/debug/gson-2.2.4_d0ce76b63ce905fbab3c5d385c8e1b8692010f19.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chenxj/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.1.0/89d827ffa47c241f2627421ef1d6c7a8c207a341/org.eclipse.paho.client.mqttv3-1.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="89d827ffa47c241f2627421ef1d6c7a8c207a341">
+        <dex dex="/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/pre-dexed/debug/org.eclipse.paho.client.mqttv3-1.1.0_1480f3507089fcd80bbe40a1ecb605e1f31dc671.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/chenxj/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-iot/2.2.22/f0753db8c9be1b837d4922a342e506d51c6bf924/aws-android-sdk-iot-2.2.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="21.1.2"
+        sha1="f0753db8c9be1b837d4922a342e506d51c6bf924">
+        <dex dex="/Users/chenxj/Documents/AWSservice/TemperatureControl/build/intermediates/pre-dexed/debug/aws-android-sdk-iot-2.2.22_3d69d4d69e806c67b431c738c2a219b21a1a67bf.jar" />
+    </item>
+
+</items>

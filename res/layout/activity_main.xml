@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="3dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/refresh"
+        android:clickable="true"
+        android:contentDescription="refresh"
+        android:onClick="getShadow" />
+
+    <TextView
+        android:id="@+id/TempLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="温度"
+        android:textSize="10pt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBaseline="@+id/Temp"
+        android:layout_alignBottom="@+id/Temp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="xx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Light"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignBottom="@+id/LighttextView"
+        android:layout_alignLeft="@+id/Moisture" />
+
+    <Button
+        android:id="@+id/updateSetpoint"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:onClick="updateSetpoint"
+        android:text="@string/SetpointButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button"
+        android:visibility="invisible" />
+
+    <TextView
+        android:text="On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/enableButton"
+        android:id="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/MoistureLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湿度"
+        android:textSize="10pt"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/Temp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:text="光度"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/LighttextView"
+        android:layout_below="@+id/Moisture"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text="浇水开关"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/LighttextView"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:text="阈值"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/LighttextView" />
+
+    <TextView
+        android:text="100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignLeft="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/Moisture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UnknownTemperatureText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignTop="@+id/MoistureLabelText"
+        android:layout_alignLeft="@+id/Temp" />
+
+    <TextView
+        android:id="@+id/Temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/UnknownTemperatureText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/textView9" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_alignRight="@+id/RelaySwitch" />
+
+    <TextView
+        android:text="设备状态"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:text="浇水开关控制"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView4"
+        android:layout_alignBaseline="@+id/enableButton"
+        android:layout_alignBottom="@+id/enableButton"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView9"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView6" />
+
+    <ToggleButton
+        android:id="@+id/enableButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="enableDisableClicked"
+        android:text="@string/enabled"
+        android:textOff="Disabled"
+        android:textOn="Enabled"
+        android:layout_below="@+id/textView13"
+        android:layout_alignRight="@+id/RelaySwitch"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:text="浇水开关"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/enableButton"
+        android:layout_alignParentLeft="true" />
+
+    <Switch
+        android:text="Open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelaySwitch"
+        android:onClick="relaySwitchClicked"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="云端控制"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/enableButton" />
+
+    <Button
+        android:text="设置"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="updateSetpoint"
+        android:id="@+id/button2"
+        android:layout_below="@+id/RelaySwitch"
+        android:layout_toRightOf="@+id/textView3" />
+
+    <TextView
+        android:text="阈值设置"
+        android:textSize="10pt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_alignTop="@+id/editText"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
